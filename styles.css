@@ -45,7 +45,7 @@ a.button-start:active {
   display: flex;
   justify-content: space-between;
 }
-.game-info {
+.time-info {
   margin-left: 100px;
   color: #e4f121;
   font-size: 3em;
