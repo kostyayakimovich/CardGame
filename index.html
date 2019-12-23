@@ -6,146 +6,47 @@
     <title>Game</title>
   </head>
   <body>
-    <div class="start">
-      <a href="index.html" class="button-start">Start game</a>
+    <div class="startMenu">
+      <div class="radioButtons">
+        <div>
+          <label class="labelRadio1">
+            <input
+              type="radio"
+              checked
+              class="radio"
+              value="16"
+              name="radioCards"
+            />
+            <span class="fake"></span>
+            <span class="textCountCards">16 карт</span>
+          </label>
+        </div>
+        <div>
+          <label class="labelRadio2">
+            <input type="radio" class="radio" value="8" name="radioCards" />
+            <span class="fake"></span>
+            <span class="textCountCards">8 карт</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="start">
+        <button class="button-start">Start game</button>
+      </div>
+    </div>
+
+    <div class="gameover">GAME OVER</div>
+    <div class="game-info-container">
+      <div class="time-info" id="timeInfo">
+        Time <span id="timeGame">0</span>
+      </div>
+      <div class="score-info" id="scoreInfo">
+        Score <span id="scoreGame">0</span>
+      </div>
     </div>
     <div class="game-container">
-      <div class="gameover" id="gameover">GAME OVER</div>
-      <div class="game-info-container">
-        <div class="time-info" id="timeInfo">Time <span id="timeGame">80</span></div>
-        <div class="score-info" id="scoreInfo">Score <span id="scoreGame">0</span></div>
-      </div>
-      <div class="card-container" id="cardContainer" >
-        <div class="card" data-name="sb">
-          <img class="front-face" src="img/sb.jpg" alt="sb" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="sq">
-          <img class="front-face" src="img/sq.jpg" alt="sq" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="patrick">
-          <img class="front-face" src="img/patrik.jpg" alt="patrik" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="krabs">
-          <img class="front-face" src="img/krabs.jpg" alt="krabs" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="sandy">
-          <img class="front-face" src="img/sandy.jpg" alt="sandy" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="plankton">
-          <img class="front-face" src="img/plankton.jpg" alt="plankton" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="larry">
-          <img class="front-face" src="img/larry.jpg" alt="larry" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="puff">
-          <img class="front-face" src="img/puff.jpg" alt="puff" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="sb">
-          <img class="front-face" src="img/sb.jpg" alt="sb" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="sq">
-          <img class="front-face" src="img/sq.jpg" alt="sq" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="patrick">
-          <img class="front-face" src="img/patrik.jpg" alt="patrik" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="krabs">
-          <img class="front-face" src="img/krabs.jpg" alt="krabs" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="sandy">
-          <img class="front-face" src="img/sandy.jpg" alt="sandy" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="plankton">
-          <img class="front-face" src="img/plankton.jpg" alt="plankton" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="larry">
-          <img class="front-face" src="img/larry.jpg" alt="larry" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="puff">
-          <img class="front-face" src="img/puff.jpg" alt="puff" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="garryCard">
-          <img class="front-face" src="img/garryCard.jpg" alt="garryCard" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="heroes">
-          <img class="front-face" src="img/heroes.jpg" alt="heroes" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="krabsburger">
-          <img class="front-face" src="img/krabsburger.jpg" alt="krabsburger" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="parentsSB">
-          <img class="front-face" src="img/parentsSB.jpg" alt="parentsSB" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="perl">
-          <img class="front-face" src="img/perl.jpg" alt="perl" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="police">
-          <img class="front-face" src="img/police.jpg" alt="police" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="flyHolland">
-          <img class="front-face" src="img/flyHolland.jpg" alt="flyHolland" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="caren">
-          <img class="front-face" src="img/caren.jpg" alt="caren" />
-          <img class="back-face" src="img/garry.jpg" alt="garry" />
-        </div>
-        <div class="card" data-name="garryCard">
-            <img class="front-face" src="img/garryCard.jpg" alt="garryCard" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="heroes">
-            <img class="front-face" src="img/heroes.jpg" alt="heroes" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="krabsburger">
-            <img class="front-face" src="img/krabsburger.jpg" alt="krabsburger" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="parentsSB">
-            <img class="front-face" src="img/parentsSB.jpg" alt="parentsSB" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="perl">
-            <img class="front-face" src="img/perl.jpg" alt="perl" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="police">
-            <img class="front-face" src="img/police.jpg" alt="police" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="flyHolland">
-            <img class="front-face" src="img/flyHolland.jpg" alt="flyHolland" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-          <div class="card" data-name="caren">
-            <img class="front-face" src="img/caren.jpg" alt="caren" />
-            <img class="back-face" src="img/garry.jpg" alt="garry" />
-          </div>
-      </div>
+      <div class="card-container" id="cardContainer"></div>
     </div>
-    <script src="myscript.js"></script>
+    <script src="cardscript.js" defer></script>
   </body>
 </html>
